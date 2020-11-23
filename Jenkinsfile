@@ -7,5 +7,16 @@ pipeline {
                     sh 'mvn -B -DskipTests clean package'
                 }
             }
+            stage('Test') {
+                steps {
+                    echo 'Effettuo il test del codice appena buildato'
+                    sh 'mvn test'
+                }
+                post {
+                    always {
+                        echo 'Eseguo il plugin jeunit, come consigliao, che produce log xml'
+                        junit 'target/surefire-reports/*.xml'
+                }
+            }
         }
     }
