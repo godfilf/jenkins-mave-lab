@@ -17,6 +17,7 @@ pipeline {
                         echo 'Eseguo il plugin jeunit, come consigliao, che produce log xml'
                         junit 'target/surefire-reports/*.xml'
                         archiveArtifacts 'target/*.jar'
+                    }
                 }
             }
             stage('Deliver') {
