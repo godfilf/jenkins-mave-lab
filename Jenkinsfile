@@ -16,6 +16,7 @@ pipeline {
                     always {
                         echo 'Eseguo il plugin jeunit, come consigliao, che produce log xml'
                         junit 'target/surefire-reports/*.xml'
+                        archive 'target/*.jar'
                 }
             }
         }
