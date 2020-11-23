@@ -1,4 +1,4 @@
-package mia-app.app;
+package mia.prima.app;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
