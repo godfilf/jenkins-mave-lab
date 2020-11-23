@@ -1,4 +1,4 @@
-package mc.sourcesense.app;
+package mia-app.app;
 
 /**
  * Hello world!

@@ -1,4 +1,4 @@
-package mc.sourcesense.app;
+package mia-app.app;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
